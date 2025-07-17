@@ -1,0 +1,35 @@
+{
+  "strict": true,
+  "debug": true,
+  "sp": {
+    "entityId": "http://127.0.0.1:8000/metadata", 
+    "assertionConsumerService": {
+      "url": "http://127.0.0.1:8000/sso/acs",
+      "binding": "urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
+    },
+    "x509cert": "",
+    "privateKey": ""
+  },
+  "idp": {
+    "entityId": "https://sts.windows.net/db9d7760-63d7-4f88-9927-fabe446e2362/",
+    "singleSignOnService": {
+      "url": "https://login.microsoftonline.com/db9d7760-63d7-4f88-9927-fabe446e2362/saml2",
+      "binding": "urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect"
+    },
+    "singleLogoutService": {
+      "url": "https://login.microsoftonline.com/db9d7760-63d7-4f88-9927-fabe446e2362/saml2",
+      "binding": "urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect"
+    },
+    "x509cert": "MIIC8DCCAdigAwIBAgIQTRJitpfxFLJFGMgTq4FDajANBgkqhkiG9w0BAQsFADA0MTIwMAYDVQQDEylNaWNyb3NvZnQgQXp1cmUgRmVkZXJhdGVkIFNTTyBDZXJ0aWZpY2F0ZTAeFw0yNTA3MTAxMTM2MzZaFw0yODA3MTAxMTM2MzZaMDQxMjAwBgNVBAMTKU1pY3Jvc29mdCBBenVyZSBGZWRlcmF0ZWQgU1NPIENlcnRpZmljYXRlMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAmsoaHIjw7slzdJhLo/6j7OdJiMbZtW4j9S+fIyM8uhJ19iDaozf8Qgfe1zSu8qRTVIQM/GdwmpJUDxpG6xdDZNw8b1no6k+Ilzf6ntRO2R2rrjKlIFRZtQwlcTwR+BYj+5RITffB1RoVx4u/X5J9w6JL/B37dO+ShU4oP7zAXBumAcLtc+2fGmbTrgHAZciMuppjke5Ez70NEoWSTygFvZDIs33KCefEMLheTqHRQKcQSCXdhWWffbY4QDCxRjzXRUXauq089u4D9OUlu+zkjrRBx+3rmmCRhXqw3mhUs1H+EpfVanVHcjhxLF/KbFZTw7mpEF+yqnqefEqpV/wyHQIDAQABMA0GCSqGSIb3DQEBCwUAA4IBAQAaPefwmTZLLNxyCH4t/q9mPk8yZwVzJn6xBGy+aCepMymDbeyQR/CSdXk5rBPqG1gf7AVvUTca5s26DFwu8QhyKwBF79LTF9pqpxOliOiqZt12tU3/qt3Js30ek5rgij5PySsEeN75XjDS5tu6lA6ZYXs7F3Te1J+ClsVv8nJfKLzbvGBeV1PlOZCR+oIqqzbLL+3jC71knM4haqaRtxY40QIXMzn1NJXg4zNVzTsBudku71QZkziYdv6tXoU4OCxvSzfMDpK7pEXg7zNpMgPF8zjtoVHVg53vaif5Q5JAMYpipceports101Hqyt6ppzjbRBX1FRzJn9Tis/jUXbT"
+  },
+  "security": {
+    "authnRequestsSigned": false,
+    "logoutRequestSigned": false,
+    "logoutResponseSigned": false,
+    "signMetadata": false,
+    "wantMessagesSigned": true,
+    "wantAssertionsSigned": true,
+    "wantAssertionsEncrypted": false,
+    "wantNameIdEncrypted": false
+  }
+}

@@ -1,0 +1,276 @@
+2025-06-09 13:19:45,742 - WARNING - File not found: FY26 Forecast Template_EU_PLMJun25.xlsb
+2025-06-09 13:19:45,743 - WARNING - File not found: FY26 Forecast Template_APAC_PLMJun25.xlsb
+2025-06-09 13:19:45,744 - WARNING - File not found: FY26 Forecast Template_NA_PLMApr25.xlsb
+2025-06-09 13:19:45,745 - ERROR - No valid files found to import
+2025-06-09 13:22:00,899 - WARNING - File not found: FY26 Forecast Template_EU_PLMJun25.xlsb
+2025-06-09 13:22:00,900 - WARNING - File not found: FY26 Forecast Template_APAC_PLMJun25.xlsb
+2025-06-09 13:22:00,901 - WARNING - File not found: FY26 Forecast Template_NA_PLMApr25.xlsb
+2025-06-09 13:22:00,901 - ERROR - No valid files found to import
+2025-06-09 13:22:15,868 - WARNING - File not found: FY26 Forecast Template_EU_PLMJun25.xlsb
+2025-06-09 13:22:15,869 - WARNING - File not found: FY26 Forecast Template_APAC_PLMJun25.xlsb
+2025-06-09 13:22:15,870 - WARNING - File not found: FY26 Forecast Template_NA_PLMApr25.xlsb
+2025-06-09 13:22:15,870 - ERROR - No valid files found to import
+2025-06-09 13:23:12,878 - WARNING - File not found: FY26 Forecast Template_EU_PLMJun25.xlsb
+2025-06-09 13:23:12,879 - WARNING - File not found: FY26 Forecast Template_APAC_PLMJun25.xlsb
+2025-06-09 13:23:12,879 - WARNING - File not found: FY26 Forecast Template_NA_PLMApr25.xlsb
+2025-06-09 13:23:12,880 - ERROR - No valid files found to import
+2025-06-09 13:24:08,239 - INFO - Starting import of 3 files
+2025-06-09 13:24:08,240 - INFO - Processing file: FY26 Forecast Template_APAC_PLM-Jun-25 1.xlsb
+2025-06-09 13:24:08,309 - INFO - Found 12 forecast columns
+2025-06-09 13:24:08,311 - INFO - Processed 7 projects from FY26 Forecast Template_APAC_PLM-Jun-25 1.xlsb
+2025-06-09 13:24:08,696 - INFO - Created new cluster: Default APAC Cluster (APAC)
+2025-06-09 13:24:08,742 - ERROR - Error importing to database: (psycopg2.errors.ForeignKeyViolation) insert or update on table "forecast_values" violates foreign key constraint "forecast_values_created_by_fkey"
+DETAIL:  Key (created_by)=(06e9f1bb-6f6f-4d89-ae15-ed4b305c6eab) is not present in table "users".
+
+[SQL: 
+                        INSERT INTO forecast_values (
+                            id, project_id, forecast_type, source_country,
+                            year, month, amount, created_by, created_at
+                        ) VALUES (
+                            %(id)s, %(project_id)s, %(forecast_type)s, %(source_country)s,
+                            %(year)s, %(month)s, %(amount)s, %(created_by)s, NOW()
+                        )
+                    ]
+[parameters: {'id': '3869f306-1c8f-4a8a-9c2a-a6dc6a7af7a4', 'project_id': '3845b0c7-2490-4c54-a629-4d991b72245c', 'forecast_type': 'OB', 'source_country': 'India', 'year': 2025, 'month': 4, 'amount': Decimal('700000.0'), 'created_by': '06e9f1bb-6f6f-4d89-ae15-ed4b305c6eab'}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-06-09 13:24:08,747 - ERROR - Failed to import FY26 Forecast Template_APAC_PLM-Jun-25 1.xlsb: (psycopg2.errors.ForeignKeyViolation) insert or update on table "forecast_values" violates foreign key constraint "forecast_values_created_by_fkey"
+DETAIL:  Key (created_by)=(06e9f1bb-6f6f-4d89-ae15-ed4b305c6eab) is not present in table "users".
+
+[SQL: 
+                        INSERT INTO forecast_values (
+                            id, project_id, forecast_type, source_country,
+                            year, month, amount, created_by, created_at
+                        ) VALUES (
+                            %(id)s, %(project_id)s, %(forecast_type)s, %(source_country)s,
+                            %(year)s, %(month)s, %(amount)s, %(created_by)s, NOW()
+                        )
+                    ]
+[parameters: {'id': '3869f306-1c8f-4a8a-9c2a-a6dc6a7af7a4', 'project_id': '3845b0c7-2490-4c54-a629-4d991b72245c', 'forecast_type': 'OB', 'source_country': 'India', 'year': 2025, 'month': 4, 'amount': Decimal('700000.0'), 'created_by': '06e9f1bb-6f6f-4d89-ae15-ed4b305c6eab'}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-06-09 13:24:08,751 - INFO - Processing file: FY26 Forecast Template_EU_PLM-Jun-25 1.xlsb
+2025-06-09 13:24:08,775 - INFO - Found 12 forecast columns
+2025-06-09 13:24:08,779 - INFO - Processed 14 projects from FY26 Forecast Template_EU_PLM-Jun-25 1.xlsb
+2025-06-09 13:24:08,787 - INFO - Created new cluster: Default EU Cluster (EU)
+2025-06-09 13:24:08,803 - ERROR - Error importing to database: (psycopg2.errors.ForeignKeyViolation) insert or update on table "forecast_values" violates foreign key constraint "forecast_values_created_by_fkey"
+DETAIL:  Key (created_by)=(06e9f1bb-6f6f-4d89-ae15-ed4b305c6eab) is not present in table "users".
+
+[SQL: 
+                        INSERT INTO forecast_values (
+                            id, project_id, forecast_type, source_country,
+                            year, month, amount, created_by, created_at
+                        ) VALUES (
+                            %(id)s, %(project_id)s, %(forecast_type)s, %(source_country)s,
+                            %(year)s, %(month)s, %(amount)s, %(created_by)s, NOW()
+                        )
+                    ]
+[parameters: {'id': 'f052fd7f-666b-4ee7-bf2e-3bfe8a2bbd8e', 'project_id': '2f8a4fc0-d3e6-40e5-b616-989ab60103ba', 'forecast_type': 'OB', 'source_country': 'UK', 'year': 2025, 'month': 4, 'amount': Decimal('13440.0'), 'created_by': '06e9f1bb-6f6f-4d89-ae15-ed4b305c6eab'}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-06-09 13:24:08,807 - ERROR - Failed to import FY26 Forecast Template_EU_PLM-Jun-25 1.xlsb: (psycopg2.errors.ForeignKeyViolation) insert or update on table "forecast_values" violates foreign key constraint "forecast_values_created_by_fkey"
+DETAIL:  Key (created_by)=(06e9f1bb-6f6f-4d89-ae15-ed4b305c6eab) is not present in table "users".
+
+[SQL: 
+                        INSERT INTO forecast_values (
+                            id, project_id, forecast_type, source_country,
+                            year, month, amount, created_by, created_at
+                        ) VALUES (
+                            %(id)s, %(project_id)s, %(forecast_type)s, %(source_country)s,
+                            %(year)s, %(month)s, %(amount)s, %(created_by)s, NOW()
+                        )
+                    ]
+[parameters: {'id': 'f052fd7f-666b-4ee7-bf2e-3bfe8a2bbd8e', 'project_id': '2f8a4fc0-d3e6-40e5-b616-989ab60103ba', 'forecast_type': 'OB', 'source_country': 'UK', 'year': 2025, 'month': 4, 'amount': Decimal('13440.0'), 'created_by': '06e9f1bb-6f6f-4d89-ae15-ed4b305c6eab'}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-06-09 13:24:08,812 - INFO - Processing file: FY26 Forecast Template_NA_PLM-Apr-25.xlsb
+2025-06-09 13:24:08,841 - INFO - Found 24 forecast columns
+2025-06-09 13:24:08,843 - WARNING - Negative forecast value found: -191254.0, setting to 0
+2025-06-09 13:24:08,843 - WARNING - Negative forecast value found: -247000.0, setting to 0
+2025-06-09 13:24:08,845 - WARNING - Negative forecast value found: -18518.52000000002, setting to 0
+2025-06-09 13:24:08,845 - WARNING - Negative forecast value found: -11518.52, setting to 0
+2025-06-09 13:24:08,847 - ERROR - Error processing file FY26 Forecast Template_NA_PLM-Apr-25.xlsb: name 'decimal' is not defined
+2025-06-09 13:24:08,847 - ERROR - Failed to import FY26 Forecast Template_NA_PLM-Apr-25.xlsb: name 'decimal' is not defined
+2025-06-09 13:24:08,848 - INFO - Import completed. Success: 0, Failed: 3
+2025-06-09 13:24:41,485 - INFO - Starting import of 3 files
+2025-06-09 13:24:41,486 - INFO - Processing file: FY26 Forecast Template_APAC_PLM-Jun-25 1.xlsb
+2025-06-09 13:24:41,519 - INFO - Found 12 forecast columns
+2025-06-09 13:24:41,522 - INFO - Processed 7 projects from FY26 Forecast Template_APAC_PLM-Jun-25 1.xlsb
+2025-06-09 13:24:41,810 - INFO - Created new cluster: Default APAC Cluster (APAC)
+2025-06-09 13:24:41,846 - ERROR - Error importing to database: (psycopg2.errors.ForeignKeyViolation) insert or update on table "forecast_values" violates foreign key constraint "forecast_values_created_by_fkey"
+DETAIL:  Key (created_by)=(06e9f1bb-6f6f-4d89-ae15-ed4b305c6eab) is not present in table "users".
+
+[SQL: 
+                        INSERT INTO forecast_values (
+                            id, project_id, forecast_type, source_country,
+                            year, month, amount, created_by, created_at
+                        ) VALUES (
+                            %(id)s, %(project_id)s, %(forecast_type)s, %(source_country)s,
+                            %(year)s, %(month)s, %(amount)s, %(created_by)s, NOW()
+                        )
+                    ]
+[parameters: {'id': '415169f6-3159-44c0-807a-d5c7e8ee78f2', 'project_id': '86aa70fb-f407-4312-b77d-56bd654a73fe', 'forecast_type': 'OB', 'source_country': 'India', 'year': 2025, 'month': 4, 'amount': Decimal('700000.0'), 'created_by': '06e9f1bb-6f6f-4d89-ae15-ed4b305c6eab'}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-06-09 13:24:41,851 - ERROR - Failed to import FY26 Forecast Template_APAC_PLM-Jun-25 1.xlsb: (psycopg2.errors.ForeignKeyViolation) insert or update on table "forecast_values" violates foreign key constraint "forecast_values_created_by_fkey"
+DETAIL:  Key (created_by)=(06e9f1bb-6f6f-4d89-ae15-ed4b305c6eab) is not present in table "users".
+
+[SQL: 
+                        INSERT INTO forecast_values (
+                            id, project_id, forecast_type, source_country,
+                            year, month, amount, created_by, created_at
+                        ) VALUES (
+                            %(id)s, %(project_id)s, %(forecast_type)s, %(source_country)s,
+                            %(year)s, %(month)s, %(amount)s, %(created_by)s, NOW()
+                        )
+                    ]
+[parameters: {'id': '415169f6-3159-44c0-807a-d5c7e8ee78f2', 'project_id': '86aa70fb-f407-4312-b77d-56bd654a73fe', 'forecast_type': 'OB', 'source_country': 'India', 'year': 2025, 'month': 4, 'amount': Decimal('700000.0'), 'created_by': '06e9f1bb-6f6f-4d89-ae15-ed4b305c6eab'}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-06-09 13:24:41,855 - INFO - Processing file: FY26 Forecast Template_EU_PLM-Jun-25 1.xlsb
+2025-06-09 13:24:41,871 - INFO - Found 12 forecast columns
+2025-06-09 13:24:41,875 - INFO - Processed 14 projects from FY26 Forecast Template_EU_PLM-Jun-25 1.xlsb
+2025-06-09 13:24:41,887 - INFO - Created new cluster: Default EU Cluster (EU)
+2025-06-09 13:24:41,911 - ERROR - Error importing to database: (psycopg2.errors.ForeignKeyViolation) insert or update on table "forecast_values" violates foreign key constraint "forecast_values_created_by_fkey"
+DETAIL:  Key (created_by)=(06e9f1bb-6f6f-4d89-ae15-ed4b305c6eab) is not present in table "users".
+
+[SQL: 
+                        INSERT INTO forecast_values (
+                            id, project_id, forecast_type, source_country,
+                            year, month, amount, created_by, created_at
+                        ) VALUES (
+                            %(id)s, %(project_id)s, %(forecast_type)s, %(source_country)s,
+                            %(year)s, %(month)s, %(amount)s, %(created_by)s, NOW()
+                        )
+                    ]
+[parameters: {'id': 'ff73f67c-cda4-45bf-821a-fa20a36566e3', 'project_id': 'a487b548-d7ea-4ced-88ce-7cf511235ab8', 'forecast_type': 'OB', 'source_country': 'UK', 'year': 2025, 'month': 4, 'amount': Decimal('13440.0'), 'created_by': '06e9f1bb-6f6f-4d89-ae15-ed4b305c6eab'}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-06-09 13:24:41,916 - ERROR - Failed to import FY26 Forecast Template_EU_PLM-Jun-25 1.xlsb: (psycopg2.errors.ForeignKeyViolation) insert or update on table "forecast_values" violates foreign key constraint "forecast_values_created_by_fkey"
+DETAIL:  Key (created_by)=(06e9f1bb-6f6f-4d89-ae15-ed4b305c6eab) is not present in table "users".
+
+[SQL: 
+                        INSERT INTO forecast_values (
+                            id, project_id, forecast_type, source_country,
+                            year, month, amount, created_by, created_at
+                        ) VALUES (
+                            %(id)s, %(project_id)s, %(forecast_type)s, %(source_country)s,
+                            %(year)s, %(month)s, %(amount)s, %(created_by)s, NOW()
+                        )
+                    ]
+[parameters: {'id': 'ff73f67c-cda4-45bf-821a-fa20a36566e3', 'project_id': 'a487b548-d7ea-4ced-88ce-7cf511235ab8', 'forecast_type': 'OB', 'source_country': 'UK', 'year': 2025, 'month': 4, 'amount': Decimal('13440.0'), 'created_by': '06e9f1bb-6f6f-4d89-ae15-ed4b305c6eab'}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-06-09 13:24:41,921 - INFO - Processing file: FY26 Forecast Template_NA_PLM-Apr-25.xlsb
+2025-06-09 13:24:41,946 - INFO - Found 24 forecast columns
+2025-06-09 13:24:41,948 - WARNING - Negative forecast value found: -191254.0, setting to 0
+2025-06-09 13:24:41,949 - WARNING - Negative forecast value found: -247000.0, setting to 0
+2025-06-09 13:24:41,951 - WARNING - Negative forecast value found: -18518.52000000002, setting to 0
+2025-06-09 13:24:41,952 - WARNING - Negative forecast value found: -11518.52, setting to 0
+2025-06-09 13:24:41,953 - WARNING - Invalid forecast value: Varada: 1/23/2024: Active project for Cooper Std. Aditi: updated for Q4 on 8 Oct, setting to 0
+2025-06-09 13:24:41,954 - WARNING - Invalid forecast value: Closed, setting to 0
+2025-06-09 13:24:41,963 - INFO - Processed 37 projects from FY26 Forecast Template_NA_PLM-Apr-25.xlsb
+2025-06-09 13:24:42,022 - INFO - Created new cluster: Default NA Cluster (NA)
+2025-06-09 13:24:42,043 - ERROR - Error importing to database: (psycopg2.errors.ForeignKeyViolation) insert or update on table "forecast_values" violates foreign key constraint "forecast_values_created_by_fkey"
+DETAIL:  Key (created_by)=(06e9f1bb-6f6f-4d89-ae15-ed4b305c6eab) is not present in table "users".
+
+[SQL: 
+                        INSERT INTO forecast_values (
+                            id, project_id, forecast_type, source_country,
+                            year, month, amount, created_by, created_at
+                        ) VALUES (
+                            %(id)s, %(project_id)s, %(forecast_type)s, %(source_country)s,
+                            %(year)s, %(month)s, %(amount)s, %(created_by)s, NOW()
+                        )
+                    ]
+[parameters: {'id': '866f71a9-875e-48a4-ae82-13ad1ee017e5', 'project_id': 'aa2e4738-5927-4eda-bcd1-adc9886038b9', 'forecast_type': 'OB', 'source_country': 'US', 'year': 2024, 'month': 7, 'amount': Decimal('63650.0'), 'created_by': '06e9f1bb-6f6f-4d89-ae15-ed4b305c6eab'}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-06-09 13:24:42,047 - ERROR - Failed to import FY26 Forecast Template_NA_PLM-Apr-25.xlsb: (psycopg2.errors.ForeignKeyViolation) insert or update on table "forecast_values" violates foreign key constraint "forecast_values_created_by_fkey"
+DETAIL:  Key (created_by)=(06e9f1bb-6f6f-4d89-ae15-ed4b305c6eab) is not present in table "users".
+
+[SQL: 
+                        INSERT INTO forecast_values (
+                            id, project_id, forecast_type, source_country,
+                            year, month, amount, created_by, created_at
+                        ) VALUES (
+                            %(id)s, %(project_id)s, %(forecast_type)s, %(source_country)s,
+                            %(year)s, %(month)s, %(amount)s, %(created_by)s, NOW()
+                        )
+                    ]
+[parameters: {'id': '866f71a9-875e-48a4-ae82-13ad1ee017e5', 'project_id': 'aa2e4738-5927-4eda-bcd1-adc9886038b9', 'forecast_type': 'OB', 'source_country': 'US', 'year': 2024, 'month': 7, 'amount': Decimal('63650.0'), 'created_by': '06e9f1bb-6f6f-4d89-ae15-ed4b305c6eab'}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-06-09 13:24:42,051 - INFO - Import completed. Success: 0, Failed: 3
+2025-06-09 13:30:17,525 - ERROR - Error validating/creating user: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "username"
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-06-09 13:30:17,526 - ERROR - Import failed: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "username"
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-06-09 13:30:33,408 - ERROR - Error validating/creating user: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "username"
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-06-09 13:30:33,409 - ERROR - Import failed: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "username"
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-06-09 14:18:03,042 - ERROR - Error validating/creating user: (psycopg2.errors.InvalidTextRepresentation) invalid input syntax for type uuid: "your-user-uuid-here"
+LINE 1: SELECT id FROM users WHERE id = 'your-user-uuid-here'
+                                        ^
+
+[SQL: SELECT id FROM users WHERE id = %(user_id)s]
+[parameters: {'user_id': 'your-user-uuid-here'}]
+(Background on this error at: https://sqlalche.me/e/20/9h9h)
+2025-06-09 14:18:03,045 - ERROR - Import failed: (psycopg2.errors.InvalidTextRepresentation) invalid input syntax for type uuid: "your-user-uuid-here"
+LINE 1: SELECT id FROM users WHERE id = 'your-user-uuid-here'
+                                        ^
+
+[SQL: SELECT id FROM users WHERE id = %(user_id)s]
+[parameters: {'user_id': 'your-user-uuid-here'}]
+(Background on this error at: https://sqlalche.me/e/20/9h9h)
+2025-06-09 14:26:36,076 - ERROR - Error validating/creating user: (psycopg2.errors.InvalidTextRepresentation) invalid input syntax for type uuid: "your-user-uuid-here"
+LINE 1: SELECT id FROM users WHERE id = 'your-user-uuid-here'
+                                        ^
+
+[SQL: SELECT id FROM users WHERE id = %(user_id)s]
+[parameters: {'user_id': 'your-user-uuid-here'}]
+(Background on this error at: https://sqlalche.me/e/20/9h9h)
+2025-06-09 14:26:36,079 - ERROR - Import failed: (psycopg2.errors.InvalidTextRepresentation) invalid input syntax for type uuid: "your-user-uuid-here"
+LINE 1: SELECT id FROM users WHERE id = 'your-user-uuid-here'
+                                        ^
+
+[SQL: SELECT id FROM users WHERE id = %(user_id)s]
+[parameters: {'user_id': 'your-user-uuid-here'}]
+(Background on this error at: https://sqlalche.me/e/20/9h9h)
+2025-06-09 14:34:03,012 - ERROR - Error validating/creating user: (psycopg2.errors.InvalidTextRepresentation) invalid input syntax for type uuid: "your-user-uuid-here"
+LINE 1: SELECT id FROM users WHERE id = 'your-user-uuid-here'
+                                        ^
+
+[SQL: SELECT id FROM users WHERE id = %(user_id)s]
+[parameters: {'user_id': 'your-user-uuid-here'}]
+(Background on this error at: https://sqlalche.me/e/20/9h9h)
+2025-06-09 14:34:03,016 - ERROR - Import failed: (psycopg2.errors.InvalidTextRepresentation) invalid input syntax for type uuid: "your-user-uuid-here"
+LINE 1: SELECT id FROM users WHERE id = 'your-user-uuid-here'
+                                        ^
+
+[SQL: SELECT id FROM users WHERE id = %(user_id)s]
+[parameters: {'user_id': 'your-user-uuid-here'}]
+(Background on this error at: https://sqlalche.me/e/20/9h9h)
+2025-06-09 14:34:31,809 - WARNING - User 06e9f1bb-6f6f-4d89-ae15-ed4b305c6eab not found in database
+2025-06-09 14:34:31,818 - INFO - Using existing admin user: a137128b-50ff-4c79-8513-1aa6256b87c1
+2025-06-09 14:34:31,824 - INFO - Starting import of 3 files
+2025-06-09 14:34:31,825 - INFO - Processing file: FY26 Forecast Template_APAC_PLM-Jun-25 1.xlsb
+2025-06-09 14:34:31,868 - INFO - Found 12 forecast columns
+2025-06-09 14:34:31,870 - INFO - Processed 7 projects from FY26 Forecast Template_APAC_PLM-Jun-25 1.xlsb
+2025-06-09 14:34:31,888 - INFO - Created new cluster: Default APAC Cluster (APAC)
+2025-06-09 14:34:32,079 - INFO - Successfully imported 7 projects to database
+2025-06-09 14:34:32,080 - INFO - Successfully imported: FY26 Forecast Template_APAC_PLM-Jun-25 1.xlsb
+2025-06-09 14:34:32,081 - INFO - Processing file: FY26 Forecast Template_EU_PLM-Jun-25 1.xlsb
+2025-06-09 14:34:32,100 - INFO - Found 12 forecast columns
+2025-06-09 14:34:32,103 - INFO - Processed 14 projects from FY26 Forecast Template_EU_PLM-Jun-25 1.xlsb
+2025-06-09 14:34:32,119 - INFO - Created new cluster: Default EU Cluster (EU)
+2025-06-09 14:34:32,667 - INFO - Successfully imported 14 projects to database
+2025-06-09 14:34:32,668 - INFO - Successfully imported: FY26 Forecast Template_EU_PLM-Jun-25 1.xlsb
+2025-06-09 14:34:32,669 - INFO - Processing file: FY26 Forecast Template_NA_PLM-Apr-25.xlsb
+2025-06-09 14:34:32,694 - INFO - Found 24 forecast columns
+2025-06-09 14:34:32,696 - WARNING - Negative forecast value found: -191254.0, setting to 0
+2025-06-09 14:34:32,697 - WARNING - Negative forecast value found: -247000.0, setting to 0
+2025-06-09 14:34:32,698 - WARNING - Negative forecast value found: -18518.52000000002, setting to 0
+2025-06-09 14:34:32,698 - WARNING - Negative forecast value found: -11518.52, setting to 0
+2025-06-09 14:34:32,699 - WARNING - Invalid forecast value: Varada: 1/23/2024: Active project for Cooper Std. Aditi: updated for Q4 on 8 Oct, setting to 0
+2025-06-09 14:34:32,700 - WARNING - Invalid forecast value: Closed, setting to 0
+2025-06-09 14:34:32,709 - INFO - Processed 37 projects from FY26 Forecast Template_NA_PLM-Apr-25.xlsb
+2025-06-09 14:34:32,745 - INFO - Created new cluster: Default NA Cluster (NA)
+2025-06-09 14:34:35,888 - INFO - Successfully imported 37 projects to database
+2025-06-09 14:34:35,889 - INFO - Successfully imported: FY26 Forecast Template_NA_PLM-Apr-25.xlsb
+2025-06-09 14:34:35,889 - INFO - Import completed. Success: 3, Failed: 0
